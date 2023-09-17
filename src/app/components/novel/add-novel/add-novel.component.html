@@ -1,0 +1,76 @@
+<form [formGroup]="novelForm" (ngSubmit)="onSubmit()" class="mat-elevation-z4">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Title" formControlName="title" required />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Author" formControlName="author" required />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="URL" formControlName="url" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Image URL" formControlName="imageUrl" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input
+      matInput
+      placeholder="Rating"
+      formControlName="rating"
+      type="number"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input
+      matInput
+      placeholder="Total Votes"
+      formControlName="totalVotes"
+      type="number"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Language" formControlName="language" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Artist" formControlName="artist" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input
+      matInput
+      placeholder="Release Year"
+      formControlName="releaseYear"
+      type="number"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Status" formControlName="status" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Publisher" formControlName="publisher" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea
+      matInput
+      placeholder="Description"
+      formControlName="description"
+    ></textarea>
+  </mat-form-field>
+
+  <!-- Add more form fields as needed for other attributes -->
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" type="submit">
+      Create Novel
+    </button>
+  </div>
+</form>
